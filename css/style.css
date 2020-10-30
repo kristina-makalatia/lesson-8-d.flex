@@ -1,0 +1,102 @@
+/*Pseudo classes*/
+.box {
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	display: inline-block;
+}
+/*.box:first-child {
+	background-color: yellow;
+}
+.box:last-child {
+	background-color: aqua;
+}
+.box:nth-child(2) {
+	background-color: black;
+}
+.box:nth-child(3) {
+	background-color: green;
+}
+*/
+/*.box:nth-child(even) {
+	background-color: aqua;
+	width: 500px;
+}
+.box:nth-child(odd) {
+	background-color: yellow;
+	width: 100px;
+}*/
+
+.box:nth-child(3) p {
+	color: #fff;
+}
+.box:nth-child(1) p {
+	color: green;
+}
+
+/*Display Flex*/
+.left-block {
+	width: 570px;
+	height: 320px;
+	background-color: yellow;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.right-block {
+	width: 570px;
+	height: 320px;
+	background-color: blue;
+}
+.video-youtube {
+	width: 100%;
+	height: 100%;
+}
+.flex-wraper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/*Section*/
+.bg-section {
+	background-color: #E6E6E6;
+}
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+.flex-box {
+	display: flex;
+	justify-content: space-between;
+}
+.box-child {
+	background-color: #F2F2F2;
+	width: 570px;
+}
+.image-flex {
+	display: flex;
+}
+.read-more {
+	display: flex;
+	justify-content: flex-end;
+}
+.google-plus {
+	color: aqua;
+	font-size: 30px;
+	transition: all 0.5s linear 0.5s;
+}
+.google-plus:hover {
+	color: black;
+}
+.fa-facebook-f {
+	color: blue;
+	font-size: 30px;
+	transition: all 0.5s linear 0.5s;
+}
+.fa-facebook-f:hover {
+	color: red;
+}
+.image {
+	color: red;
+}
