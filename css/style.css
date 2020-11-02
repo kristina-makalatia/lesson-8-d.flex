@@ -1,128 +1,114 @@
-/*Pseudo classes*/
-.box {
-	width: 200px;
-	height: 200px;
-	background-color: red;
-	display: inline-block;
+/*Base classes*/
+.container {
+	max-width:1088px;
+	width: 100%;
+	margin: 0 auto;
 }
-/*.box:first-child {
-	background-color: yellow;
+.d-flex {
+	display: flex;
 }
-.box:last-child {
-	background-color: aqua;
+/*Header*/
+.bg-header {
+	background-image: url('../img/header-image.jpg');
+	height: 324px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
 }
-.box:nth-child(2) {
-	background-color: black;
-}
-.box:nth-child(3) {
-	background-color: green;
-}
-*/
-/*.box:nth-child(even) {
-	background-color: aqua;
-	width: 500px;
-}
-.box:nth-child(odd) {
-	background-color: yellow;
-	width: 100px;
-}*/
 
-.box:nth-child(3) p {
+.flex-header {
+	justify-content: space-between;
+	padding-top: 30px;
+}
+li {
+	margin-right: 49px;
+}
+li a {
 	color: #fff;
 }
-.box:nth-child(1) p {
-	color: green;
+li:last-child {
+	margin-right: 0;
 }
-
-/*Display Flex*/
-.left-block {
-	width: 570px;
-	height: 320px;
-	background-color: yellow;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+.title-header {
+	color:#fff;
+	font-size: 42px;
+	font-family: 'Poppins', sans-serif; 
 }
-.right-block {
-	width: 570px;
-	height: 320px;
-	background-color: blue;
+.p-header,
+.about-header {
+	font-size: 14px;
+	font-family: 'Poppins', sans-serif;
+	color: #fff;
+	display: inline-block;
 }
-.video-youtube {
-	width: 100%;
-	height: 100%;
+.p-header::after {
+	content: ' ';
+	width: 1px;
+	height: 19px;
+	background-color: #fff;
+	display: inline-block;
+	margin: 0 16.5px 0  14.5px;
 }
-.flex-wraper {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+.divider {
+	width: 1px;
+	height: 19px;
+	background-color: #fff;
+	margin: 0 16.5px 0  14.5px;
+}
+.about-wraper {
+	position: absolute;
+	top: 146px;
 }
 
 /*Section*/
 .bg-section {
-	background-color: #E6E6E6;
+	background-image: url('../img/section-image.jpg');
+	height: auto;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-top: 90px;
+	padding-bottom: 90px;
 }
-.container {
-	width: 1170px;
-	margin: 0 auto;
+.title-h3 {
+	color: #5863F8;
+	font-size: 14px;
 }
-.flex-box {
-	display: -webkit-box;
-	display: -ms-flexbox;
+.section-p {
+	font-size: 42px;
+	color: #fff;
+	font-family: 'Poppins', sans-serif; 
+	width: 376px;
+}
+.box {
+	background-color: #fff;
+	width: 260px;
+	height: 260px;
 	display: flex;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
-.box-child {
-	background-color: #F2F2F2;
-	width: 570px;
+.box-wraper {
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
-.image-flex {
-	display: -webkit-box;
-	display: -ms-flexbox;
+.icon img {
+	height: 32px;
+}
+.icon-box {
+	width: 59px;
+	height: 58px;
+	background: #5863F8;
+	border-radius: 50%;
 	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-.read-more {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: end;
-	    -ms-flex-pack: end;
-	        justify-content: flex-end;
-}
-.google-plus {
-	color: aqua;
-	font-size: 30px;
-	-webkit-transition: all 0.5s linear 0.5s;
-	-o-transition: all 0.5s linear 0.5s;
-	transition: all 0.5s linear 0.5s;
-}
-.google-plus:hover {
-	color: black;
-}
-.fa-facebook-f {
-	color: blue;
-	font-size: 30px;
-	-webkit-transition: all 0.5s linear 0.5s;
-	-o-transition: all 0.5s linear 0.5s;
-	transition: all 0.5s linear 0.5s;
-}
-.fa-facebook-f:hover {
-	color: red;
-}
-.image {
-	color: red;
-}
+
+
+
+/*Responsive*/
